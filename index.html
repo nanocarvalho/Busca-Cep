@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700&display=swap" rel="stylesheet">
+    <script defer src="./js/app.js"></script>
+    <title>Busca CEP</title>
+</head>
+<body>
+    <h1>Busca CEP</h1>
+    <main class="main-container">
+        <div class="inputs">
+            <label for="cep">Digite o CEP desejado: </label>
+            <input type="text" name="cep" id="cep" data-js="cep-input">
+            <button type="submit" data-js="user-submit">Buscar</button>
+        </div>
+
+        <div class="error">
+            <p class="error-message" data-js="error-message"></p>
+        </div>
+
+        <div class="result">
+            <p data-js="cep-result"></p>
+            <p data-js="rua-result"></p>
+            <p data-js="bairro-result"></p>
+            <p data-js="cidade-result"></p>
+            <p data-js="estado-result"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>By <a href="https://nanocarvalho.github.io" target="_blank" rel="noopener">Nano Carvalho</a></p>
+        <span>Api used: <a href="https://docs.awesomeapi.com.br/api-cep" target="_blank" rel="noopener">AwesomeAPI</a></span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: #212121;
+    font-family: 'Mulish', sans-serif;
+}
+
+h1 {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1, p, label {
+    color: #eee;
+}
+
+/* Main container */
+.main-container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* User input */
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs input {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 0.4rem;
+}
+
+.inputs button {
+    padding: 0.5rem 2rem;
+    border: 0;
+    border-radius: 0.4rem;
+    background-color: #00897b;
+    color: #eee;
+    transition: all 0.2s ease-out;
+}
+
+.inputs button:hover {
+    cursor: pointer;
+    background-color: #006089;
+}
+
+/* Error message */
+.error {
+    display: none;
+    margin-top: 2rem;
+}
+
+.error.show {
+    display: block;
+}
+
+.error-message {
+    /* To prevent display erros when hover */
+    border: 1px solid transparent;
+    line-height: 1.7;
+    color: #eee;
+}
+
+.error-message:hover {
+    border-bottom: 1px solid #e42e2e;
+}
+
+/* Result */
+.result {
+    
+    margin-top: 2rem;
+}
+
+.result p {
+    /* To prevent display erros when hover */
+    border: 1px solid transparent;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in;
+}
+
+.result p:hover {
+    border-bottom: 1px solid #00897b;
+}
+
+/* Footer container */
+footer {
+    max-width: 95%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+footer span {
+    color: #eee;
+}
+
+footer a {
+    text-decoration: none;
+    color: #00897b;
+}
+
+@media (min-width: 768px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    h1 {
+        margin-top: 8rem;
+    }
+    /* Main container */
+    .main-container {
+        max-width: 60%;
+    }
+    /* Error message */
+    .error, .result {
+        margin: 2rem auto;
+        max-width: 60%;
+    }
+    /* Result */
+    .result {
+        margin: 0 auto;
+        max-width: 60%;
+        
+    }
+}
